@@ -18,17 +18,20 @@ public class Movement : MonoBehaviour {
     void Update() {
         if (Input.GetKey(KeyCode.LeftArrow) || (Input.GetKey(KeyCode.A))) {
             // run
-            animator.SetFloat("Speed", 1);
+            // animator.SetFloat("Speed", 1);
+            animator.SetBool("Speed", true);
             transform.position = (Vector2)transform.position + new Vector2(-5, 0) * Time.deltaTime;
             sr.flipX = true;
         }
         else if ((Input.GetKey(KeyCode.RightArrow)) || (Input.GetKey(KeyCode.D))) {
-            animator.SetFloat("Speed", 1);
+            // animator.SetFloat("Speed", 1);
+            animator.SetBool("Speed", true);
             transform.position = (Vector2)transform.position + new Vector2(5, 0) * Time.deltaTime;
             sr.flipX = false;
         }
         else {
-            animator.SetFloat("Speed", 0);
+            // animator.SetFloat("Speed", 0);
+            animator.SetBool("Speed", false);
         }
 
         if (Input.GetKeyDown(KeyCode.Space)) {
