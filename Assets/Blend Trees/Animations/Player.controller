@@ -7,7 +7,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Walking
+  m_Name: walking
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -165,12 +165,6 @@ AnimatorController:
   m_Name: Player
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: Blend
-    m_Type: 1
-    m_DefaultFloat: 0
-    m_DefaultInt: 0
-    m_DefaultBool: 0
-    m_Controller: {fileID: 0}
   - m_Name: dirX
     m_Type: 1
     m_DefaultFloat: 0
@@ -210,31 +204,31 @@ AnimatorStateMachine:
     m_Position: {x: 274, y: 83, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3336470094757438667}
-    m_Position: {x: 309, y: 148, z: 0}
+    m_Position: {x: 100, y: 450, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8487026465842140170}
-    m_Position: {x: 344, y: 213, z: 0}
+    m_Position: {x: 100, y: 410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8896275842239637518}
-    m_Position: {x: 379, y: 278, z: 0}
+    m_Position: {x: 540, y: 440, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4504844872788565329}
-    m_Position: {x: 414, y: 343, z: 0}
+    m_Position: {x: -60, y: 430, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8684846044534129882}
-    m_Position: {x: -1.9646606, y: 255.15683, z: 0}
+    m_Position: {x: 0, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8140455368981515488}
-    m_Position: {x: 33.03534, y: 320.15683, z: 0}
+    m_Position: {x: 390, y: 410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -7779628798409894728}
-    m_Position: {x: 68.03534, y: 385.15683, z: 0}
+    m_Position: {x: 250, y: 410, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8211252939870312234}
-    m_Position: {x: 103.03534, y: 450.15683, z: 0}
+    m_Position: {x: 240, y: 450, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6099637966317700287}
-    m_Position: {x: 138.03534, y: 515.15686, z: 0}
+    m_Position: {x: 380, y: 450, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
