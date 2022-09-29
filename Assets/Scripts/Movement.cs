@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,8 +37,19 @@ public class Movement : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Space)) {
             // jump
-            animator.SetTrigger("Jump");
-            rb.AddForce(new Vector2(0, 5), ForceMode2D.Impulse);
+            if (animator.GetBool("CanJump") == true) {
+                animator.SetTrigger("Jump");
+                rb.AddForce(new Vector2(0, 5), ForceMode2D.Impulse);
+            }
+
+            animator.SetBool("CanJump", false);
+        }
+    }
+    
+    private void OnCollisionEnter2D(Collision2D col) {
+        if (col.gameObject.CompareTag("Floor"))
+        {
+            animator.SetBool("CanJump", true);
         }
     }
 }
